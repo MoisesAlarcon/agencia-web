@@ -75,7 +75,7 @@ export default function Navbar() {
         style={{
           fontFamily: 'Syne, sans-serif',
           fontWeight: 800,
-          fontSize: '1.2rem',
+          fontSize: 'clamp(0.9rem, 3vw, 1.2rem)',
           color: '#f1f5f9',
           letterSpacing: '-0.02em',
         }}
@@ -85,7 +85,7 @@ export default function Navbar() {
       </a>
 
       {/* ── Links de navegación ── */}
-      <nav style={{ display: 'flex', gap: '2.5rem', alignItems: 'center' }}>
+      <nav style={{ display: 'flex', gap: 'clamp(1rem, 4vw, 2.5rem)', alignItems: 'center' }}>
         {links.map((link, i) => (
           <a
             key={link.label}
@@ -96,7 +96,7 @@ export default function Navbar() {
               position: 'relative',
               fontFamily: 'DM Sans, sans-serif',
               fontWeight: 400,
-              fontSize: '0.8rem',
+              fontSize: 'clamp(0.65rem, 2vw, 0.8rem)',
               letterSpacing: '0.12em',
               textTransform: 'uppercase',
               color: '#94a3b8',
